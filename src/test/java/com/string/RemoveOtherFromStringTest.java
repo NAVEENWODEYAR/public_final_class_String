@@ -14,9 +14,7 @@ public class RemoveOtherFromStringTest {
 	
 	@Test
 	public void removeDigitsTest() {
-		r = new RemoveFromString();
-		assertEquals("OneTwo", r.removeWhiteSpaces("One12Two"));
-		
+		assertEquals("OneTwo", RemoveFromString.removedigits("One12Two"));
 	}
 	
 }
