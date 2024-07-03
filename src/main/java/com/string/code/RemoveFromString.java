@@ -5,7 +5,7 @@ package com.string.code;
  */
 public class RemoveFromString {
 
-	static String removeWhiteSpaces(String st) {
+	public static String removeWhiteSpaces(String st) {
 		return st.replaceAll("\\s", "");
 	}
 	

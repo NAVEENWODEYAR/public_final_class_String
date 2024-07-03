@@ -27,4 +27,10 @@ public class StringReverseTest {
 		s1 = new StrReverse();
 		assertNull(s1);
 	}
+	
+	@Test
+	public void reverseStringTest() {
+		s1 = new StrReverse();
+		assertEquals("ab", s1.reverseString("ba"));
+	}
 }
