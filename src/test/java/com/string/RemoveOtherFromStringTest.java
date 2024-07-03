@@ -9,8 +9,6 @@ import org.junit.jupiter.api.Test;
 import com.string.code.RemoveFromString;
 
 public class RemoveOtherFromStringTest {
-
-	RemoveFromString r = new RemoveFromString();
 	
 	@Test
 	public void removeDigitsTest() {

@@ -1,10 +1,17 @@
 package com.string.code;
+
+import java.util.Comparator;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
 /**
  * @author Naveen K Wodeyar
  * @date 01-Jul-2024
  */
 public class StrReverse {
 
+	// using StringBuffer and StringBuilder,
 	public String reverseString(String st) {
 		String rev = "";
 		for(int i=st.length()-1; i>=0; i--) {
@@ -24,6 +31,14 @@ public class StrReverse {
 			return st;
 		}
 		return stReverse(st.substring(1))+st.charAt(0);
+	}
+	
+	// using Java8,
+	static String stringReverse(String st) {
+		return IntStream.rangeClosed(0, st.length())
+						.mapToObj(s->st.charAt(st.length()-s-1))
+						.map(String::valueOf)
+						.collect(Collectors.joining());
 	}
 	
 	public static void main(String[] args) {
