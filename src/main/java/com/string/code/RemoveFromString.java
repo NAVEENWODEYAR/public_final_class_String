@@ -5,11 +5,11 @@ package com.string.code;
  */
 public class RemoveFromString {
 
-	public static String removeWhiteSpaces(String st) {
+	 static String removeWhiteSpaces(String st) {
 		return st.replaceAll("\\s", "");
 	}
 	
-	static String removedigits(String st) {
+	public static String removedigits(String st) {
 		return st.replaceAll("\\d", "");
 	}
 	

@@ -9,13 +9,10 @@ import org.junit.jupiter.api.Test;
 import com.string.code.RemoveFromString;
 
 public class RemoveOtherFromStringTest {
-
-	RemoveFromString r = new RemoveFromString();
 	
 	@Test
 	public void removeDigitsTest() {
-		r = new RemoveFromString();
-		assertEquals("OneTwo", r.removeWhiteSpaces("One12Two"));
+		assertEquals("OneTwo", RemoveFromString.removedigits("One12Two"));
 		
 	}
 	
