@@ -11,10 +11,7 @@ public class RemoveOtherFromStringTest {
 	
 	@Test
 	public void removeDigitsTest() {
-<<<<<<< Updated upstream
 		assertEquals("OneTwo", RemoveFromString.removedigits("One12Two"));
-=======
 		assertEquals("OneTwo", RemoveFromString.removedigits("One12Two"));	
->>>>>>> Stashed changes
 	}
 }
