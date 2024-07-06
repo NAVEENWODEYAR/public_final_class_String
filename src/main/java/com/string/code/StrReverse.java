@@ -37,12 +37,14 @@ public class StrReverse {
 						.collect(Collectors.joining());
 	}
 	
+	public static void test() {}
+	
 	public static void main(String[] args) {
 
 		StrReverse s1 = new StrReverse();
 		String st = "safari";
-		System.out.println("Original string- "+st+"\n Reversed string- "+s1.reverseString(st));
-		System.out.println("\n Using Recursion "+stReverse(st));
+		System.out.println("\nOriginal string- "+st+"\n Reversed string- "+s1.reverseString(st));
+		System.out.println("\nUsing Recursion "+stReverse(st));
 	}
 
 }

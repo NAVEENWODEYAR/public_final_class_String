@@ -1,5 +1,6 @@
 package com.string;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import com.string.code.RemoveFromString;
 
@@ -12,6 +13,5 @@ public class RemoveOtherFromStringTest {
 	@Test
 	public void removeDigitsTest() {
 		assertEquals("OneTwo", RemoveFromString.removedigits("One12Two"));
-		assertEquals("OneTwo", RemoveFromString.removedigits("One12Two"));	
 	}
 }
