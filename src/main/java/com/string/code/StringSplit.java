@@ -8,10 +8,10 @@ import java.util.Arrays;
  */
 public class StringSplit {
 
-	public static String[] stringSplit(String st) {
+	public static String stringSplit(String st) {
 		String[] split = st.toLowerCase().split(" ");
 		System.out.println("\nString "+st+"\n Array "+Arrays.toString(split));
-		return split;
+		return Arrays.toString(split);
 	}
 	public static void main(String[] args) {
 		stringSplit("String");

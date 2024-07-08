@@ -2,9 +2,7 @@ package com.string;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
-
 import org.junit.jupiter.api.Test;
-
 import com.string.code.StrReverse;
 import com.string.code.StringSplit;
 
@@ -36,9 +34,9 @@ public class StringReverseTest {
 		assertEquals("ab", s1.reverseString("ba"));
 	}
 	
+	@Test
 	public void splitString() {
 		s2 = new StringSplit();
-		assertNull(s2);
 		assertEquals("[null]", s2.stringSplit("null"));
 	}
 }
