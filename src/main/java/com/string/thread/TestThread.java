@@ -17,6 +17,19 @@ public class TestThread extends Thread{
 	}
 
 	public static void main(String[] args) {
+		Runnable runnable = ()->{
+			for (int i = 0; i < Thread.NORM_PRIORITY; i++) {
+				System.out.println(Thread.currentThread().getName()+"-"+i);
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		};
+		 
+		Thread t = new Thread(runnable);
+				t.start();
 		
 		Thread thread = new TestThread();
 				thread.start();
