@@ -13,6 +13,7 @@ public class TestThread extends Thread{
 	public void run() {
 		System.out.println(Thread.currentThread().getName());
 		Thread.sleep(1000);
+		Thread.yield();
 		System.out.println(Thread.getAllStackTraces());
 	}
 
@@ -30,9 +31,12 @@ public class TestThread extends Thread{
 		 
 		Thread t = new Thread(runnable);
 				t.start();
+				boolean holdsLock = Thread.holdsLock(t);
+				System.out.println(holdsLock);
 		
 		Thread thread = new TestThread();
 				thread.start();
+				thread.notify();
 	}
 
 }

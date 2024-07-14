@@ -15,12 +15,13 @@ public class ThreadSynchronization implements Runnable{
 		synchronized (this) {	
 			for (int i = 0; i < 4; i++) {
 				counter++;
-	//			System.out.println(Thread.currentThread().getName()+","+i);
+				System.out.println(Thread.currentThread().getName()+","+i);
 			}
 		}
 		System.out.println("Counter after increment="+counter);
 	}
 
+	@SneakyThrows
 	public static void main(String[] args) {
     ThreadSynchronization thread = new ThreadSynchronization();
         
@@ -28,6 +29,7 @@ public class ThreadSynchronization implements Runnable{
         Thread th2 = new Thread(thread, "Thread-2");
         
         th1.start();
+        th1.join();
         th2.start();
 		
 	}
