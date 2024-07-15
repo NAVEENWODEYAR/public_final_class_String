@@ -16,6 +16,9 @@ public class ThreadSynchronization implements Runnable{
 			for (int i = 0; i < 4; i++) {
 				counter++;
 				System.out.println(Thread.currentThread().getName()+","+i);
+				if(Thread.currentThread().isDaemon()) {
+					System.out.println("\nDaemon thread,"+Thread.currentThread().getName());
+				}
 			}
 		}
 		System.out.println("Counter after increment="+counter);
@@ -30,7 +33,10 @@ public class ThreadSynchronization implements Runnable{
         
         th1.start();
         th1.join();
+        th1.notify();
         th2.start();
+        th2.notifyAll();
+        th2.setDaemon(true);
 		
 	}
 

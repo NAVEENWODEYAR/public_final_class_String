@@ -20,7 +20,7 @@ public class TestThread extends Thread{
 	public static void main(String[] args) {
 		Runnable runnable = ()->{
 			for (int i = 0; i < Thread.NORM_PRIORITY; i++) {
-				System.out.println(Thread.currentThread().getName()+"-"+i);
+				System.out.println(Thread.currentThread().getName()+" "+i);
 				try {
 					Thread.sleep(1000);
 				} catch (InterruptedException e) {
@@ -33,10 +33,6 @@ public class TestThread extends Thread{
 				t.start();
 				boolean holdsLock = Thread.holdsLock(t);
 				System.out.println(holdsLock);
-		
-		Thread thread = new TestThread();
-				thread.start();
-				thread.notify();
 	}
 
 }
