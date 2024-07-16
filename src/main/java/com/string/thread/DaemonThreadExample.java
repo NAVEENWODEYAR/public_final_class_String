@@ -10,7 +10,7 @@ public class DaemonThreadExample {
             for (int i = 1; i <= 5; i++) {
                 System.out.println("User thread running: " + i);
                 try {
-                    Thread.sleep(1000); // Sleep for 1 second
+                    Thread.sleep(2000); // Sleep for 1 second
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -22,7 +22,7 @@ public class DaemonThreadExample {
             while (true) {
                 System.out.println("Daemon thread running in background...");
                 try {
-                    Thread.sleep(500); // Sleep for 0.5 seconds
+                    Thread.sleep(5000); // Sleep for 0.5 seconds
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -30,11 +30,9 @@ public class DaemonThreadExample {
         });
         daemonThread.setDaemon(true); // Set the thread as a daemon thread
 
-        // Start both threads
         userThread.start();
         daemonThread.start();
 
-        // Main thread waits for userThread to finish
         try {
             userThread.join();
         } catch (InterruptedException e) {

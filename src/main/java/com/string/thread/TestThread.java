@@ -31,8 +31,7 @@ public class TestThread extends Thread{
 		 
 		Thread t = new Thread(runnable);
 				t.start();
-				boolean holdsLock = Thread.holdsLock(t);
-				System.out.println(holdsLock);
+				System.out.println(Thread.holdsLock(t));
 	}
 
 }

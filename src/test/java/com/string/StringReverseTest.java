@@ -35,6 +35,12 @@ public class StringReverseTest {
 	}
 	
 	@Test
+	public void reverseStringTest1() {
+		s1 = new StrReverse();
+		assertEquals("string", s1.reverseString("gnirts"));
+	}
+	
+	@Test
 	public void splitString() {
 		s2 = new StringSplit();
 		assertEquals("[null]", s2.stringSplit("null"));
