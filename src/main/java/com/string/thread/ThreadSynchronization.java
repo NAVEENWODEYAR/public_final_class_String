@@ -8,7 +8,6 @@ import lombok.SneakyThrows;
  */
 public class ThreadSynchronization implements Runnable{
 
-	@SneakyThrows
 	@Override
 	public void run() {
 		int counter = 0;
@@ -16,13 +15,16 @@ public class ThreadSynchronization implements Runnable{
 			for (int i = 0; i < 4; i++) {
 				counter++;
 				System.out.println(Thread.currentThread().getName()+","+i);
+				if(Thread.currentThread().isDaemon()) {
+					System.out.println("\nDaemon thread,"+Thread.currentThread().getName());
+				}
 			}
 		}
 		System.out.println("Counter after increment="+counter);
 	}
 
 	@SneakyThrows
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
     ThreadSynchronization thread = new ThreadSynchronization();
         
         Thread th1 = new Thread(thread, "Thread-1");
@@ -30,7 +32,10 @@ public class ThreadSynchronization implements Runnable{
         
         th1.start();
         th1.join();
+        th1.notify();
         th2.start();
+        th2.notifyAll();
+        th2.setDaemon(true);
 		
 	}
 
