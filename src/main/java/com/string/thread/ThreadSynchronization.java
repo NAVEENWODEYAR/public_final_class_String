@@ -8,7 +8,6 @@ import lombok.SneakyThrows;
  */
 public class ThreadSynchronization implements Runnable{
 
-	@SneakyThrows
 	@Override
 	public void run() {
 		int counter = 0;
@@ -25,7 +24,7 @@ public class ThreadSynchronization implements Runnable{
 	}
 
 	@SneakyThrows
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
     ThreadSynchronization thread = new ThreadSynchronization();
         
         Thread th1 = new Thread(thread, "Thread-1");
