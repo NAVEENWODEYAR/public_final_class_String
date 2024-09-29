@@ -39,7 +39,6 @@ public class StringPrasing {
 		return map.getOrDefault(ch, 0);	
 	}
 	
-	
 	// Using replaceAll and String Length,
 	static Integer chLen(String st,char c) {
 		int newLen = st.replaceAll(String.valueOf(c),"").length();
