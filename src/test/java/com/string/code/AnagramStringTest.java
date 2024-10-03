@@ -12,11 +12,9 @@ import org.junit.jupiter.api.Test;
  */
 class AnagramStringTest {
     
-    private AnagramString anagramString;
-
     @BeforeEach
     void setUp() {
-        anagramString = new AnagramString();
+        new AnagramString();
     }
 
     @Test
