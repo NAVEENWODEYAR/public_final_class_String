@@ -1,6 +1,8 @@
 package com.string.java21;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.Map;
 
 import org.junit.jupiter.api.Test;
 
@@ -71,7 +73,7 @@ class StringUtilsTest {
     void testCapitalizeWords() {
         assertEquals("Hello World", StringUtils.capitalizeWords("hello world"));
         assertEquals("Java Programming", StringUtils.capitalizeWords("java programming"));
-        assertEquals("", StringUtils.capitalizeWords(""));
+        assertEquals("AB", StringUtils.capitalizeWords("ab"));
     }
 
     @Test
