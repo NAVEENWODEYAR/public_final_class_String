@@ -1,19 +1,14 @@
-/**
- * @author Naveen K Wodeyar
- * @date 04-Oct-2024
- */
 package com.string.code;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 /**
- * 
+ * @author Naveen K Wodeyar
+ * @date 04-Oct-2024
  */
 class RemoveFromStringTest {
 
