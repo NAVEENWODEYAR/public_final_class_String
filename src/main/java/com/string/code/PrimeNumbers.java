@@ -1,12 +1,13 @@
+package com.string.code;
+
+import java.util.stream.IntStream;
+
 /**
  * @author Naveen K Wodeyar
  * @date 13-Dec-2024
- */
-package com.string.code;
-
-/**
  * PrimeNumbers program to print prime numbers up to a specified limit.
  */
+
 public class PrimeNumbers {
     public static void main(String[] args) {
         int limit = 100; // You can set any limit here
@@ -18,6 +19,12 @@ public class PrimeNumbers {
                 System.out.print(num + " ");
             }
         }
+        
+        // Generate first 50 prime numbers
+        IntStream.iterate(2, i -> i + 1)
+                 .filter(PrimeNumbers::isPrime)
+                 .limit(50)
+                 .forEach(System.out::println);
     }
 
     /**
@@ -37,5 +44,13 @@ public class PrimeNumbers {
             }
         }
         return true; // If no divisors found, it's prime
+    }
+    
+    // Method to check if a number is prime
+    public static boolean isPrimeStream(int number) {
+        if (number < 2) 
+        	return false;
+        return IntStream.rangeClosed(2, (int)Math.sqrt(number))
+                        .allMatch(n -> number % n != 0);
     }
 }

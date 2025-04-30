@@ -6,6 +6,7 @@ import lombok.SneakyThrows;
  * @author Naveen K Wodeyar
  * @date 13-Jul-2024
  */
+
 public class ThreadSynchronization implements Runnable{
 
 	@Override

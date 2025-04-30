@@ -1,8 +1,10 @@
 package com.string.thread;
+
 /**
  * @author Naveen K Wodeyar
  * @date 15-Jul-2024
  */
+
 public class DaemonThreadExample {
     public static void main(String[] args) {
         // Create a user thread
