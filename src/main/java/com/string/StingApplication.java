@@ -16,7 +16,7 @@ import java.util.Arrays;
 @SpringBootApplication
 public class StingApplication {
 
-    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+	private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy EEEE MMM hh:mm a");
 
     public static void main(String[] args) {
         SpringApplication.run(StingApplication.class, args);
@@ -51,7 +51,7 @@ public class StingApplication {
     @Bean
     public ApplicationListener<ApplicationReadyEvent> onApplicationReady() {
         return event -> {
-            System.out.println(">> Application is fully started and ready to accept requests.");
+            System.out.println("Application is fully started and ready to accept requests.");
         };
     }
 }
