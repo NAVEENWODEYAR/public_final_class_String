@@ -1,8 +1,9 @@
+package com.string.code;
+
 /**
  * @author Naveen K Wodeyar
  * @date 17-May-2025
  */
-package com.string.code;
 
 public class StringCompressor {
     public static String compress(String input) {
