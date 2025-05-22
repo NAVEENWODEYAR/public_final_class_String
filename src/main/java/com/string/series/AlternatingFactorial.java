@@ -6,8 +6,8 @@ package com.string.series;
  */
 
 public class AlternatingFactorial {
-    public static void main(String[] args) {
-        int n = 6;
+
+    public static int alternatingFactorialSum(int n) {
         int sum = 0;
         for (int i = 1; i <= n; i++) {
             int fact = 1;
@@ -15,6 +15,11 @@ public class AlternatingFactorial {
             if (i % 2 == 0) sum -= fact;
             else sum += fact;
         }
-        System.out.println("Result: " + sum);
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        int n = 6;
+        System.out.println("Result: " + alternatingFactorialSum(n));
     }
 }
