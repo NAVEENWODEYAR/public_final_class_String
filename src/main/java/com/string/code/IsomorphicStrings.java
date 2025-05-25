@@ -8,7 +8,7 @@ import java.util.HashMap;
  */
 
 public class IsomorphicStrings {
-    public static boolean isIsomorphic(String s, String t) {
+    public boolean isIsomorphic(String s, String t) {
         if (s.length() != t.length()) return false;
 
         HashMap<Character, Character> mapST = new HashMap<>();
@@ -35,7 +35,10 @@ public class IsomorphicStrings {
     }
 
     public static void main(String[] args) {
-        System.out.println(isIsomorphic("egg", "add"));  // Output: true
+    	IsomorphicStrings isomorPihic = new IsomorphicStrings();
+        System.out.println(isomorPihic.isIsomorphic("egg", "add"));  // Output: true
+        System.out.println(isomorPihic.isIsomorphic("foo", "bar"));  // Output: true
+        System.out.println(isomorPihic.isIsomorphic("paper", "title"));  // Output: true
     }
 }
 
