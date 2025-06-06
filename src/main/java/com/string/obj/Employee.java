@@ -48,6 +48,8 @@ public class Employee {
         employeeSet.add(new Employee(102, "Bob", 85000));
         employeeSet.add(new Employee(103, "Charlie", 85000));
         employeeSet.add(new Employee(101, "Alicia", 95000)); // Duplicate ID!
+        employeeSet.add(new Employee(104, "Dora", 85000));
+        employeeSet.add(new Employee(103, "Dora", 85000));
 
         System.out.println("Unique Employees (HashSet by ID):");
         for (Employee e : employeeSet) {
@@ -65,5 +67,6 @@ public class Employee {
         System.out.println("\nSorted Employees (by salary desc, then name asc):");
         for (Employee e : employeeList) {
             System.out.println(e);
-        }}
+        }
+        }
 }
