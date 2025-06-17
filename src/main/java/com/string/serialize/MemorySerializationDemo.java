@@ -8,11 +8,11 @@ import java.io.*;
  */
 
 //Class must implement Serializable
-class Student implements Serializable {
+class Studen implements Serializable {
  int id;
  String name;
 
- Student(int id, String name) {
+ Studen(int id, String name) {
      this.id = id;
      this.name = name;
  }
