@@ -1,13 +1,16 @@
 package com.string.code;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 /**
  * @author Naveen K Wodeyar
  * @date 24-Jun-2025
  */
 
 public class CharCount {
-    public static void main(String[] args) {
-        String str = "programming";
+    public static Map<Character, Integer> countCharacters(String str) {
+        Map<Character, Integer> charCountMap = new LinkedHashMap<>();
         boolean[] visited = new boolean[str.length()];
 
         for (int i = 0; i < str.length(); i++) {
@@ -22,7 +25,14 @@ public class CharCount {
                 }
             }
 
-            System.out.println(str.charAt(i) + ": " + count);
+            charCountMap.put(str.charAt(i), count);
         }
+
+        return charCountMap;
+    }
+
+    public static void main(String[] args) {
+        Map<Character, Integer> result = countCharacters("programming");
+        result.forEach((k, v) -> System.out.println(k + ": " + v));
     }
 }
