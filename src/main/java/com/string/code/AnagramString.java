@@ -1,9 +1,11 @@
 package com.string.code;
+
+import java.util.Arrays;
+
 /**
  * @author Naveen K Wodeyar
  * @date 01-Oct-2024
  */
-import java.util.Arrays;
 
 public class AnagramString {
 
