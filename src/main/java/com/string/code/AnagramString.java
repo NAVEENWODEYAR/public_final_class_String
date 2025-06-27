@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class AnagramString {
 
 	    public static boolean areAnagrams(String str1, String str2) {
-	        // Null or empty checks
+	        // Null/empty checks
 	        if (str1 == null || str2 == null) return false;
 	        if (str1.length() != str2.length()) return false;
 
