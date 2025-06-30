@@ -10,7 +10,8 @@ import org.junit.jupiter.api.Test;
  * @author Naveen K Wodeyar
  * @date 02-Oct-2024
  */
-class AnagramStringTest {
+
+class AnagramStringTest1 {
     
     @BeforeEach
     void setUp() {
