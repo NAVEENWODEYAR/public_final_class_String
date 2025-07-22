@@ -1,10 +1,11 @@
+package com.string.thread;
+
+import java.util.concurrent.*;
+
 /**
  * @author Naveen K Wodeyar
  * @date 20-Jul-2025
  */
-package com.string.thread;
-
-import java.util.concurrent.*;
 
 public class FastestParallelMultiplication {
 
