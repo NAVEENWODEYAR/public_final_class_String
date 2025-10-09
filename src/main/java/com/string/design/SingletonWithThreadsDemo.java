@@ -12,7 +12,7 @@ class SingletonThread {
 
  // Private constructor
  private SingletonThread() {
-     System.out.println("Singleton instance created by " + Thread.currentThread().getName());
+     System.out.println("SingletonThread instance created by " + Thread.currentThread().getName());
  }
 
  // Thread-safe Singleton with double-checked locking
@@ -28,7 +28,7 @@ class SingletonThread {
  }
 
  public void showMessage() {
-     System.out.println("Hello from Singleton! Called by " + Thread.currentThread().getName());
+     System.out.println("Hello from SingletonThread! Called by " + Thread.currentThread().getName());
  }
 }
 
