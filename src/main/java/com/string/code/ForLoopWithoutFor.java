@@ -9,8 +9,9 @@ public class ForLoopWithoutFor {
 
     // Method to simulate a for loop using recursion
     static void simulateForLoop(int start, int end) {
-        if (start > end)
-            return; // base case
+        if (start > end) {
+            return;
+        }
         System.out.println(start);
         simulateForLoop(start + 1, end); // recursive call (acts like increment)
     }
@@ -21,7 +22,7 @@ public class ForLoopWithoutFor {
         System.out.println("Range: " + start + " to " + end);
         System.out.println("Output:");
         simulateForLoop(start, end);
-        System.out.println(); // blank line between test cases
+        System.out.println(); 
     }
 
     public static void main(String[] args) {
@@ -32,5 +33,7 @@ public class ForLoopWithoutFor {
         testSimulateForLoop(3, 10, 5);
 
         testSimulateForLoop(4, -3, 2);
+        
+        testSimulateForLoop(2, 4, -3);
     }
 }
