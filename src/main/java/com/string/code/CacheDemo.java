@@ -90,7 +90,7 @@ public class CacheDemo {
         System.out.println("Input: getData(2) repeated 3 times");
         System.out.println("Expected: Only first call expensive");
         System.out.println("Actual:");
-        for (int i = 1; i <= 3; i++) {
+        for (int i = 1; i <= 10; i++) {
             System.out.println("Call " + i + ": " + cache.getData(2));
         }
     }
