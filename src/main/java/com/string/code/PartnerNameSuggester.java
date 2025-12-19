@@ -5,7 +5,7 @@ package com.string.code;
  * @date 19-Dec-2025
  */
 
-public class ParnerNameSuggester {
+public class PartnerNameSuggester {
 
     public static String suggestPartner(String name, String gender) {
         if (name == null || gender == null) {
