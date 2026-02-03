@@ -1,10 +1,11 @@
+package com.string.code;
+
+import java.util.*;
+
 /**
  * @author Naveen K Wodeyar
  * @date 02-Feb-2026
  */
-package com.string.code;
-
-import java.util.*;
 
 class AnagramTestWithTestCases {
 
