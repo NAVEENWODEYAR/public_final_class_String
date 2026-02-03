@@ -97,6 +97,7 @@ public class PrimeNumbersLeetCodeStyle {
         int n = 50;
         System.out.println("Prime numbers up to " + n + ":");
         System.out.println(sieve(n));
+        System.out.println(sieve(n));
     }
     
 }
