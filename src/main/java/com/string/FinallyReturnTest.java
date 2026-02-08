@@ -11,10 +11,12 @@ public class FinallyReturnTest {
         System.out.println(getValue());
     }
 
-    static int getValue() {
+    @SuppressWarnings("finally")
+	static int getValue() {
         try {
             return 10;
         } finally {
+            System.out.println("Finaly always executes,,,,,,,");
             return 20;
         }
     }
