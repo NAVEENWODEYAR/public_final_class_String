@@ -1,10 +1,11 @@
+package com.string.code;
+
+import java.util.Scanner;
+
 /**
  * @author Naveen K Wodeyar
  * @date 23-Feb-2026
  */
-package com.string.code;
-
-import java.util.Scanner;
 
 public class LeaveLetter {
     public static void main(String[] args) {
