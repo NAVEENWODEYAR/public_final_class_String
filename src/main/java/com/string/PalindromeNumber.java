@@ -15,6 +15,7 @@ public class PalindromeNumber {
 
         int original = number;
         int reversed = 0;
+        
 
         while (number != 0) {
             int digit = number % 10;
