@@ -14,7 +14,7 @@ public class NthHighestSalaryDemo {
     static final String PASSWORD = "password";
 
     public static void main(String[] args) {
-        int n = 3; // change this to find nth highest salary
+        int n = 4; // change this to find nth highest salary
 
         try (Connection con = DriverManager.getConnection(URL, USER, PASSWORD)) {
 
@@ -54,7 +54,7 @@ public class NthHighestSalaryDemo {
                 "4. RANK() (Skips ranks)"
             );
 
-            // 5. Correlated Subquery
+            // 5. Correlated Sub-query
             executeQuery(con,
                 "SELECT salary FROM employee e1 WHERE ? = (" +
                 " SELECT COUNT(DISTINCT salary) FROM employee e2 WHERE e2.salary >= e1.salary" +
@@ -68,6 +68,7 @@ public class NthHighestSalaryDemo {
         }
     }
 
+    
     // Common method to execute and print result
     public static void executeQuery(Connection con, String query, int n, String methodName) {
         try (PreparedStatement ps = con.prepareStatement(query)) {
