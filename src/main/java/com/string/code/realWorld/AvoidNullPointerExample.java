@@ -12,7 +12,8 @@ import java.util.List;
 
 public class AvoidNullPointerExample {
 
-    public static void main(String[] args) {
+    @SuppressWarnings("unused")
+	public static void main(String[] args) {
 
         String name = null;
 
