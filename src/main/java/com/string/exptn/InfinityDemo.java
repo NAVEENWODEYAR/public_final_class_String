@@ -1,8 +1,9 @@
+package com.string.exptn;
+
 /**
  * @author Naveen K Wodeyar
  * @date 21-May-2026
  */
-package com.string.exptn;
 
 public class InfinityDemo {
 
