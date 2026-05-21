@@ -1,11 +1,11 @@
+package com.string.code.realWorld;
+
 /**
  * @author Naveen K Wodeyar
  * @date 22-May-2026
  */
-package com.string.code.realWorld;
 
 //Java Program to Describe WhatsApp Architecture
-
 class User {
  String name;
  String phoneNumber;
@@ -60,17 +60,12 @@ public class WhatsAppArchitecture {
 
      // WhatsApp workflow
      server.authenticate(sender);
-
      String msg = "Hello Bob!";
-
      encryption.encryptMessage(msg);
-
      sender.sendMessage(msg, receiver);
-
      server.storeMessage(msg);
-
      encryption.decryptMessage(msg);
-
      database.saveChat();
  }
+ 
 }
