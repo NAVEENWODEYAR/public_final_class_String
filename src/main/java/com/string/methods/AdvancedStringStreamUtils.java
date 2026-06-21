@@ -113,7 +113,7 @@ public class AdvancedStringStreamUtils {
                 mostFrequentCharacter("mississippi").orElse(null));
 
         System.out.println("6. Sort words by length: " +
-                sortWordsByLength("Java is awesome and fun"));
+                sortWordsByLength("Java language is awesome and fun"));
 
         System.out.println("7. Dedup and sort: " +
                 dedupAndSortWords("banana apple cherry apple banana"));
