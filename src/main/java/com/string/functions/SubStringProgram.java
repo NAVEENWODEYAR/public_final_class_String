@@ -16,6 +16,6 @@ public class SubStringProgram {
         System.out.println(index);
         String lastWord = str.substring(index + 1);
 
-        System.out.println(lastWord);
+        System.out.println("Sub string program "+lastWord);
     }
 }
