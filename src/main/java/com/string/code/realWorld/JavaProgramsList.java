@@ -1,11 +1,11 @@
+package com.string.code.realWorld;
+
 /**
  * @author Naveen K Wodeyar
  * @date 22-May-2026
  */
-package com.string.code.realWorld;
 
 //Java Tricky Programs List
-
 public class JavaProgramsList {
 
  public static void main(String[] args) {
@@ -30,4 +30,5 @@ public class JavaProgramsList {
 
      System.out.println("=====================================");
  }
+ 
 }
