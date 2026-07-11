@@ -29,7 +29,7 @@ public class BestPracticesAdvisor {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("=== Best Programming Practices Advisor ===");
+        System.out.println("=== Best/Standard Programming Practices Advisor ===");
         System.out.print("Enter a topic (clean code, testing, performance, security, oop): ");
         String topic = scanner.nextLine();
 
