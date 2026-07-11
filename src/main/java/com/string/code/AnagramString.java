@@ -29,7 +29,9 @@ public class AnagramString {
 	        String str1 = "listen";
 	        String str2 = "silent";
 	        String str3 = "hello";
+ 
 
+System.out.println("/n Anagram Test /n");
 	        System.out.println(areAnagrams(str1, str2)); // true
 	        System.out.println(areAnagrams(str1, str3)); // false
 	    }
