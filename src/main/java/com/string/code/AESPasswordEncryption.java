@@ -16,7 +16,7 @@ public class AESPasswordEncryption {
     private static final String AES = "AES";
 
     public static void main(String[] args) throws Exception {
-        String password = "MySecretPassword";
+        String password = "MySecretPasswordString";
 
         // Generate secret key
         SecretKey secretKey = generateKey(); // or load from somewhere
