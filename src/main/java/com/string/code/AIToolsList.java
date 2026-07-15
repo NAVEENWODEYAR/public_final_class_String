@@ -25,7 +25,7 @@ public class AIToolsList {
         aiTools.add("Synthesia (AI Avatar Generator)");
         aiTools.add("ElevenLabs (AI Voice Generator)");
 
-        System.out.println("=== Popular AI Tools (2025) ===");
+        System.out.println("=== Popular AI Tools/Apps (2025) ===");
         aiTools.forEach(System.out::println);
     }
 }
