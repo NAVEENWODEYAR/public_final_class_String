@@ -7,7 +7,7 @@ import java.io.*;
  * @date 16-Jun-2025
  */
 
-//Class must implement Serializable
+// Class must implement Serializable
 class Studen implements Serializable {
  int id;
  String name;
@@ -45,6 +45,7 @@ public class MemorySerializationDemo {
          Student deserialized = (Student) ois.readObject();
          ois.close();
 
+System.oit.println("In memory sterilization using ByteArrayImputSteeam");
          // Display deserialized object
          System.out.println("Deserialized object:");
          deserialized.display();
