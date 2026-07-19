@@ -11,6 +11,7 @@ import java.util.*;
 public class BellCurveDemo {
 
     public static void main(String[] args) {
+System.out.println("Bell curve demo");
         Scanner scanner = new Scanner(System.in);
 
         // Input: Number of students
