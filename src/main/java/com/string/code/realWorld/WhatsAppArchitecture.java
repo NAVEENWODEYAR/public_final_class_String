@@ -58,6 +58,7 @@ public class WhatsAppArchitecture {
      Database database = new Database();
      Encryption encryption = new Encryption();
 
+System.out.println("Watsapp Architecture demo program");
      // WhatsApp workflow
      server.authenticate(sender);
      String msg = "Hello Bob!";
