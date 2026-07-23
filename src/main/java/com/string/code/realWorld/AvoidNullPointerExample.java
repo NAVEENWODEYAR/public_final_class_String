@@ -15,6 +15,7 @@ public class AvoidNullPointerExample {
     @SuppressWarnings("unused")
 	public static void main(String[] args) {
 
+System.out.println("Best coding practics to avoid NPE ");
         String name = null;
 
         // 1. Null check before using object

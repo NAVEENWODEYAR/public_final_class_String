@@ -48,6 +48,7 @@ public class AdvancedStringUtils {
     }
 
     public static String indentString(String str, int n) {
+System.out.println("indent string");
         return str.indent(n); // Java 12+
     }
 }
