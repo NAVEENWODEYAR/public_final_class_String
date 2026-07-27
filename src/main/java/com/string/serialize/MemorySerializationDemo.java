@@ -45,8 +45,8 @@ public class MemorySerializationDemo {
          Student deserialized = (Student) ois.readObject();
          ois.close();
 
-System.oit.println("In memory sterilization using ByteArrayImputSteeam");
          // Display deserialized object
+         System.out.println("In memory sterilization using ByteArrayImputSteeam");
          System.out.println("Deserialized object:");
          deserialized.display();
 
