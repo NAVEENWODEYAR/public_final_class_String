@@ -9,6 +9,7 @@ public class Calculator {
 
     public static double calculate(double a, double b, char op) {
 
+System.out.println("Calculator");
         double result;
 
         switch (op) {

@@ -76,6 +76,7 @@ public class GenericsDemo {
 
  public static void main(String[] args) {
 
+System.out.println("Generics demo program");
      // 1. Generic Class
      Box<Integer> intBox = new Box<>();
      intBox.set(10);
