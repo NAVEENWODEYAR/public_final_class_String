@@ -45,7 +45,7 @@ class Solution {
 public class ConcatenatedString {
 
     private static void runTest(int n, String expected) {
-        Solution solution = new Solution();
+    	Solution solution = new Solution();
 
         String actual = solution.concatenatedString(n);
 

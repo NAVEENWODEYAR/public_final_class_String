@@ -14,7 +14,7 @@ package com.string.series;
  * Output: true
  */
 
-class Solution {
+class ContainsWordCheckProgram {
 
     public boolean containsWord(String sentence, String word) {
 
@@ -30,7 +30,7 @@ public class ContainsWordCheck {
 
     private static void runTest(String sentence, String word, boolean expected) {
 
-        Solution solution = new Solution();
+    	ContainsWordCheckProgram solution = new ContainsWordCheckProgram();
 
         boolean actual = solution.containsWord(sentence, word);
 
