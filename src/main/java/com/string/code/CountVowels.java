@@ -27,6 +27,8 @@ class CountVowels {
     public static void main(String[] args) {
         System.out.println(countVowels("Interview")); // 4
         System.out.println(countVowels("Java"));      // 2
+        System.out.println(countVowels("Python"));      // 2
+
     }
 }
 
