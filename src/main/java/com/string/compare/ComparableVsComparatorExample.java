@@ -1,10 +1,11 @@
+package com.string.compare;
+
+import java.util.*;
+
 /**
  * @author Naveen K Wodeyar
  * @date 10-Aug-2026
  */
-package com.string.compare;
-
-import java.util.*;
 
 // Car class implements Comparable
 // Comparable is used for natural/default sorting
@@ -80,6 +81,8 @@ public class ComparableVsComparatorExample {
         cars.add(new Car("Audi", 4000000, 2020));
         cars.add(new Car("Tata", 1500000, 2024));
         cars.add(new Car("Honda", 2000000, 2021));
+        cars.add(new Car("Ford", 2000000, 2001));
+
 
 
         // =================================================
