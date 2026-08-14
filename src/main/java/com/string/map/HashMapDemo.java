@@ -1,11 +1,12 @@
-/**
- * @author Naveen K Wodeyar
- * @date 13-Aug-2026
- */
 package com.string.map;
 
 import java.util.HashMap;
 import java.util.Map;
+
+/**
+ * @author Naveen K Wodeyar
+ * @date 13-Aug-2026
+ */
 
 public class HashMapDemo {
 
@@ -15,10 +16,13 @@ public class HashMapDemo {
         HashMap<Integer, String> students = new HashMap<>();
 
         // 2. Adding key-value pairs using put()
-        students.put(101, "Rahul");
-        students.put(102, "Priya");
-        students.put(103, "Arun");
-        students.put(104, "Sneha");
+        students.put(101, "Gani");
+        students.put(102, "Gowri");
+        students.put(103, "Nandi");
+        students.put(104, "Ramu");
+        students.put(104, "Ramu");
+        students.put(104, "Bheema");
+
 
         System.out.println("Students: " + students);
 
