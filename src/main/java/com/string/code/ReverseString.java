@@ -7,7 +7,8 @@ package com.string.code;
  * <p>Interview approach:
  * 1. Convert the String into a character array.
  * 2. Use two pointers: one at the beginning and one at the end.
- * 3. Swap characters while the pointers move toward each other.</p>
+ * 3. Swap characters while the pointers move toward each other.
+ * </p>
  */
 
 public class ReverseString {
@@ -43,6 +44,7 @@ public class ReverseString {
         return new String(chars);
     }
 
+    
     /**
      * Test cases.
      */
@@ -68,4 +70,6 @@ public class ReverseString {
         System.out.println(reverse(""));
         // Expected: empty string
     }
+    
+    
 }
