@@ -1,11 +1,12 @@
-/**
- * @author Naveen K Wodeyar
- * @date 01-Sept-2026
- */
 package com.string.code.realWorld;
 
 import java.util.HashMap;
 import java.util.Map;
+
+/**
+ * @author Naveen K Wodeyar
+ * @date 01-Sept-2026
+ */
 
 public class CharacterFrequency {
 
