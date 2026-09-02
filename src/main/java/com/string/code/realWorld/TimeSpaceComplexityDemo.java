@@ -60,7 +60,7 @@ package com.string.code.realWorld;
  *
  * ============================================================
  */
-public class TimeSpaceComplexity {
+public class TimeSpaceComplexityDemo {
 
     /**
      * --------------------------------------------------------
