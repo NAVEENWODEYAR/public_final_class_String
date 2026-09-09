@@ -6,7 +6,7 @@ package com.string.code.realWorld;
 
 /**
  * ============================================================
- * Program Name : TimeSpaceComplexity
+ * Program Name : TimeSpaceComplexityDemo
  * ============================================================
  *
  * Description:
@@ -14,22 +14,43 @@ package com.string.code.realWorld;
  * using simple Java examples.
  *
  * ------------------------------------------------------------
- * TIME COMPLEXITY
+ * TIME COMPLEXITY - DEFINITION
  * ------------------------------------------------------------
- * Time Complexity tells us how the number of operations in
- * an algorithm increases when the input size increases.
+ * Time Complexity is the rate at which the number of operations
+ * performed by an algorithm grows with respect to the input
+ * size 'n'.
+ *
+ * In simple terms:
+ *
+ * Time Complexity tells us how the execution work of an
+ * algorithm grows when the input size increases.
+ *
+ * Example:
+ *
+ * If an algorithm processes n elements one by one,
+ * its time complexity is O(n).
  *
  * ------------------------------------------------------------
- * SPACE COMPLEXITY
+ * SPACE COMPLEXITY - DEFINITION
  * ------------------------------------------------------------
- * Space Complexity tells us how much additional memory an
- * algorithm requires when the input size increases.
+ * Space Complexity is the rate at which the memory required
+ * by an algorithm grows with respect to the input size 'n'.
+ *
+ * In simple terms:
+ *
+ * Space Complexity tells us how the additional memory used
+ * by an algorithm grows when the input size increases.
+ *
+ * Example:
+ *
+ * If an algorithm creates an additional array of size n,
+ * its space complexity is O(n).
  *
  * ------------------------------------------------------------
  * BIG-O NOTATION
  * ------------------------------------------------------------
- * Big-O notation is used to describe the efficiency of an
- * algorithm.
+ * Big-O notation is used to represent the upper bound of
+ * an algorithm's growth rate with respect to input size.
  *
  * Common Big-O complexities:
  *
@@ -44,7 +65,7 @@ package com.string.code.realWorld;
  * ------------------------------------------------------------
  *
  * O(1)
- * -> Accessing an element using an array index.
+ * -> Accessing an element using a known array index.
  *
  * O(log n)
  * -> Searching sorted data using Binary Search.
@@ -196,11 +217,13 @@ public class TimeSpaceComplexityDemo {
      * There are two nested loops.
      *
      * Outer loop -> n times
-     * Inner loop -> n times
+     * Inner loop -> approximately n times
      *
      * Total operations:
      *
      * n * n = n²
+     *
+     * Therefore:
      *
      * Time Complexity  : O(n²)
      * Space Complexity : O(1)
@@ -319,10 +342,13 @@ public class TimeSpaceComplexityDemo {
         boolean found = binarySearch(numbers, target);
 
         if (found) {
+
             System.out.println(
                     target + " was found in the array."
             );
+
         } else {
+
             System.out.println(
                     target + " was not found in the array."
             );
@@ -355,6 +381,7 @@ public class TimeSpaceComplexityDemo {
         System.out.println("Copied Array:");
 
         for (int number : copiedArray) {
+
             System.out.println(number);
         }
 
