@@ -10,12 +10,15 @@ package com.string.compare;
 public class StringPoolTricky {
 
     public static void main(String[] args) {
+    	
         System.out.println("=== String Constant Pool Tricky Scenarios ===\n");
 
         // Scenario 1: String Literals vs. New Keyword
         String s1 = "Java";
         String s2 = "Java";
         String s3 = new String("Java");
+        String s7 = new String("Java");
+
 
         System.out.println("1. Literals check (s1 == s2): " + (s1 == s2)); 
         // Expected: true -> Both point to the exact same object in the String Constant Pool.
@@ -25,6 +28,7 @@ public class StringPoolTricky {
 
         System.out.println("   Content check using .equals (s1.equals(s3)): " + s1.equals(s3)); 
         // Expected: true -> .equals() compares the actual character values, not memory references.
+        System.out.println("   Content check using .equals (s1.equals(s3)): " + s1.equals(s7)); 
 
         // Scenario 2: The intern() Method
         String s4 = s3.intern();
