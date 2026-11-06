@@ -9,13 +9,12 @@ package com.string.compare;
 public class StringComparisonTest {
 
     public static void main(String[] args) {
+    	
         System.out.println("=== RUNNING STRING COMPARISON TEST CASES ===");
-        
         testLiteralVsLiteral();
         testLiteralVsNewString();
         testNewStringVsNewString();
         testInternedString();
-        
         System.out.println("\nAll tests completed!");
     }
 
@@ -32,7 +31,7 @@ public class StringComparisonTest {
     // Test 2: Literal vs New String object
     public static void testLiteralVsNewString() {
         String s1 = "Java";
-        String s2 = new String("Java");
+        String s2 = new String(s1);
         
         System.out.println("\nTest 2: Literal vs New String (\"Java\" & new String(\"Java\"))");
         System.out.println("  == operator : " + (s1 == s2) + " (Expected: false)");
